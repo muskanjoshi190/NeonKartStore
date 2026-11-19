@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="800" height="800" role="img" aria-label="Vibe Shade">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff4d8d"/><stop offset="1" stop-color="#ffd166"/></linearGradient>
+<linearGradient id="lens" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff4d8d" stop-opacity=".92"/><stop offset="1" stop-color="#ffd166" stop-opacity=".92"/></linearGradient>
+<linearGradient id="rgb" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff4d8d"/><stop offset=".5" stop-color="#27e1ff"/><stop offset="1" stop-color="#b8ff5a"/></linearGradient>
+<radialGradient id="bg1" cx=".5" cy=".4" r=".8"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#ffdfea"/><stop offset="1" stop-color="#ffb4cf"/></radialGradient>
+<linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffaf0"/><stop offset="1" stop-color="#ffeaba"/></linearGradient>
+<radialGradient id="bg3" cx=".3" cy=".25" r="1"><stop offset="0" stop-color="#ffedf4"/><stop offset="1" stop-color="#ffe8b2"/></radialGradient>
+<linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+<pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="#000" fill-opacity=".08"/></pattern>
+<filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="14" stdDeviation="11" flood-color="#1a1030" flood-opacity=".38"/></filter>
+<filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+</defs>
+<rect width="400" height="400" fill="url(#bg3)"/><rect width="400" height="400" fill="url(#dots)"/>
+<g filter="url(#sh)"><g transform="translate(200 188) scale(1.85) translate(-118 -205)">
+<path d="M62 172 L18 196 Q10 202 16 210" stroke="#15151f" stroke-width="12" fill="none" stroke-linecap="round"/>
+<path d="M338 172 L382 196 Q390 202 384 210" stroke="#15151f" stroke-width="12" fill="none" stroke-linecap="round"/>
+<rect x="52" y="152" width="132" height="104" rx="46" fill="url(#lens)"/>
+<rect x="216" y="152" width="132" height="104" rx="46" fill="url(#lens)"/>
+<rect x="52" y="152" width="132" height="104" rx="46" fill="none" stroke="#15151f" stroke-width="12"/>
+<rect x="216" y="152" width="132" height="104" rx="46" fill="none" stroke="#15151f" stroke-width="12"/>
+<path d="M184 178 Q200 162 216 178" stroke="#15151f" stroke-width="10" fill="none" stroke-linecap="round"/>
+<path d="M78 180 L118 178 M242 180 L282 178" stroke="#fff" stroke-opacity=".6" stroke-width="7" stroke-linecap="round"/>
+<path d="M82 200 L100 198 M246 200 L264 198" stroke="#fff" stroke-opacity=".4" stroke-width="5" stroke-linecap="round"/>
+</g></g>
+</svg>
