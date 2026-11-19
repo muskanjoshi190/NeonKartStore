@@ -1,33 +1,112 @@
-# NeonKart
+# NeonKart | E-Commerce Store
 
-A responsive online store built with plain HTML, CSS and JavaScript. No frameworks, no build step.
+**NeonKart** is a modern and responsive e-commerce storefront designed to deliver a seamless and interactive online shopping experience. Built using HTML5, CSS3, and Vanilla JavaScript, the project focuses on clean UI design, dynamic product interactions, and efficient shopping cart management.
 
-## Run it
-Open the folder in VS Code and start **Live Server** on `index.html` (double-clicking `index.html` also works).
+## Overview
+
+NeonKart provides a complete frontend shopping experience with product discovery, interactive product details, cart functionality, promotional offers, and a streamlined checkout interface.
 
 ## Features
-- 12 products rendered from the `products` array in `js/data.js`, each with 3 swipeable photos, description and features
-- Hero offers slider, category tiles, deals of the day with countdown, filters (category, price, search, sort)
-- Product details popup with thumbnails, delivery estimate, quantity picker and Save for later
-- Cart: add, change quantity, remove, empty cart; coupons `NEON10` (10% off) and `WELCOME100` (₹100 off above ₹1,500)
-- Checkout form with validation and order confirmation (demo: no payment is taken)
-- Cart, coupon and saved items persist through `localStorage`
-- Help, policy and contact dialogs, FAQ, newsletter form; works on phones, tablets and desktops
 
-## How totals are calculated
-- Subtotal = sum of `price x quantity` for every cart line (found by product `id`, using `reduce`)
-- Discount = coupon applied on the subtotal (percentage rounded to whole rupees)
-- Delivery = ₹49 when the amount after discount is below ₹999, otherwise free
-- Total = subtotal - discount + delivery, formatted with `toLocaleString('en-IN', { style: 'currency', currency: 'INR' })`
+### Product Browsing
+- Dynamic product catalog featuring 12 products.
+- Three swipeable images for each product.
+- Detailed product descriptions and feature highlights.
+- Interactive product categories and promotional sections.
 
-## Using real product photos
-1. Put your photos in `images/` named `<slug>-1`, `<slug>-2`, `<slug>-3` (for example `aurora-x1-1.jpg`). Slugs are listed in `js/data.js`.
-2. In `js/data.js`, change `var IMAGE_EXT = "svg";` to `"jpg"` (or `"png"` / `"webp"`).
-Square photos (1:1) look best.
+### Search & Filtering
+- Real-time product search.
+- Category-based filtering.
+- Price range filtering.
+- Product sorting options.
 
-## Files
-- `index.html` page structure
-- `css/style.css` theme and responsive styles
-- `js/data.js` product data
-- `js/app.js` cart logic, carousels, filters, dialogs
-- `images/` product images
+### Product Details
+- Interactive product details popup.
+- Image gallery with thumbnail navigation.
+- Product quantity selection.
+- Estimated delivery information.
+- Save for Later functionality.
+
+### Shopping Cart
+- Add and remove products.
+- Increase or decrease product quantities.
+- Clear cart functionality.
+- Dynamic cart and order summary.
+- Persistent cart data using Local Storage.
+
+### Offers & Discounts
+- Promotional hero slider.
+- Deals of the Day with countdown timer.
+- Coupon code integration:
+  - `NEON10` – 10% discount.
+  - `WELCOME100` – ₹100 discount on orders above ₹1,500.
+
+### Checkout & Order Management
+- Interactive checkout form.
+- Form validation.
+- Automatic price and discount calculations.
+- Delivery charge calculation.
+- Order confirmation interface.
+
+### Additional Functionality
+- FAQ section.
+- Help and policy dialogs.
+- Contact interface.
+- Newsletter subscription form.
+- Responsive navigation and layouts.
+
+## Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| HTML5 | Website structure and content |
+| CSS3 | Styling, layouts and responsive design |
+| JavaScript | Interactive functionality and dynamic content |
+| Local Storage | Persistent cart, coupon and saved-item data |
+
+## Project Structure
+
+```text
+NeonKart/
+│
+├── index.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   ├── data.js
+│   └── app.js
+│
+├── images/
+│   └── Product images and visual assets
+│
+└── README.md
+```
+
+## Shopping & Pricing Logic
+
+The application dynamically calculates the final order amount using the following logic:
+
+- **Subtotal:** Sum of individual product prices multiplied by their quantities.
+- **Discount:** Calculated according to the applied coupon.
+- **Delivery Charges:** ₹49 for orders below ₹999 after discount; free delivery for orders of ₹999 or above.
+- **Final Total:** Subtotal − Discount + Delivery Charges.
+
+All currency values are formatted using the Indian Rupee (INR) format.
+
+## Responsive Design
+
+The interface is designed to provide a consistent shopping experience across:
+
+- Desktop computers
+- Tablets
+- Mobile devices
+
+## Important Note
+
+NeonKart is a frontend e-commerce demonstration project. The checkout process and order confirmation are simulated. No real transactions or payments are processed.
+
+---
+
+**Developed with HTML, CSS and JavaScript.**
